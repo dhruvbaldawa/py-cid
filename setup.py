@@ -12,11 +12,11 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'base58>=1.0.2,<2.0',
-    'py-multibase>=1.0.0,<2.0.0',
-    'py-multicodec<0.3.0',
-    'morphys>=1.0,<2.0',
-    'py-multihash>=0.2.0,<1.0.0',
+    'base58',
+    'py-multibase',
+    'py-multicodec',
+    'morphys',
+    'py-multihash',
 ]
 
 setup_requirements = [
@@ -30,7 +30,7 @@ test_requirements = [
 
 setup(
     name='py-cid',
-    version='0.3.0',
+    version='0.4.0',
     description="Self-describing content-addressed identifiers for distributed systems",
     long_description=readme + '\n\n' + history,
     author="Dhruv Baldawa",
@@ -42,16 +42,17 @@ setup(
     license="MIT license",
     zip_safe=False,
     keywords='cid',
+    python_requires='>=3.6',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
     test_suite='tests',
     tests_require=test_requirements,
